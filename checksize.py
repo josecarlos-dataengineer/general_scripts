@@ -4,6 +4,15 @@ import os
 import pandas as pd
 
 class size_scan():
+    '''
+    This class has three methods, to_list, to_df and to_graph. For each method 
+    it is necessary to input an argument called *path which is the path of a given
+    directory. 
+    To_list returns a list of every folder housed in the given path and its sizes.
+    To_df returns a pandas dataframe containing every folder housed in the given path and its sizes.
+    To_graph returns a bar chart with top *n elements.
+    For example: size_scan.to_graph(path=r'C:\Users\SALA443',n=12) returns top 12 folders
+    '''
     def get_size(start_path):
         
         total_size = 0
